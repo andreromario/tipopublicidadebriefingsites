@@ -1,0 +1,45 @@
+form textarea, form input:not([type=submit]) {
+	margin-bottom: 20px !important;
+	border-radius: 5px !important;
+	border: #000 solid 1px !important;
+
+	transition: all 0.3s !important;
+}
+
+form input[type=file] {
+	border: none !important;
+} 
+
+input[type=checkbox], input[type=radio] {
+	margin: 4px 3px 0 0 !important;
+}
+
+form textarea:focus, form input:not([type=submit]):focus {
+	border-color: #F4B20E;
+}
+
+.tipo {
+	position: relative;
+
+}
+
+.tipo:before {
+	content: "Desenvolvido por Tipo Publicidade";
+	position: absolute;
+	right: 0;
+	width: 240px;
+	top: 4px;
+	right: -240px;
+	opacity: 0;
+	visibility: hidden;
+	font-size: 10px;
+	color: #000;
+
+	transition: all 0.1s;
+}
+
+.tipo:hover:before {
+	opacity: 1;
+	visibility: visible;
+	right: 0;
+}
